@@ -1,6 +1,9 @@
 # compiled output
 /dist
 /node_modules
+/.aws-sam
+/.serverless
+/.vscode
 
 # Logs
 logs
