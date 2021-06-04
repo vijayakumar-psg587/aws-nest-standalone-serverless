@@ -1,8 +1,10 @@
-service: serverless-simple-http-endpoint
+service: nest-standalone-serverless
 
+frameworkVersion: ^2.40.0
 
 provider:
   name: aws
+  lambdaHashingVersion: 20201221
   runtime: nodejs14.x
 
 plugins:

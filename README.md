@@ -28,3 +28,8 @@ NOTE: This is a sample implementation to test if a HTTP server can be spun insid
 
 > [!IMPORTANT]
 > NOTE: Please note that the important thing that is necessary for all typescript generated modules is to make use of .d.ts and js.mapping files that is generated as part of output. THis is required for the serverless to run. Else it will keep throwing that the handler module is not found
+
+     **IN PROGRESS**
+     1. Read for changes in mongodb collection
+     2. Using Redis as the messagebus to update
+     3. Read from the messagebus and put that update inside AWS RDS
