@@ -1,0 +1,18 @@
+service: serverless-simple-http-endpoint
+
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+plugins:
+  - serverless-offline
+  - serverless-pseudo-parameters
+
+functions:
+  testEnpoint:
+    handler: dist/src/lambdas/lambda-kinesis-entry-point.handler
+    events:
+      - http:
+          path: consumeKinesis
+          method: get
